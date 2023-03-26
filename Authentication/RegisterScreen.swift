@@ -19,12 +19,12 @@ struct AlertIdentifier: Identifiable {
 }
 
 struct RegisterScreen: View {
-    
     @State var email_text: String = ""
     @State var password_text: String = ""
     @State var password_message: String = "New Password"
     @State var email_message: String = "Email"
     @State private var alertIdentifier: AlertIdentifier?
+    
     private var key = "isslab"
     
     var body: some View {
